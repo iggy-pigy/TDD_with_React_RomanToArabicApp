@@ -17,4 +17,14 @@ describe('Convert', () => {
     it('initializes a string of letters in `state`', () => {
         expect(convert.state()).toEqual({ letters: '' });
     });
+
+    describe('before typing into the letter input', () => {
+        beforeEach(() => {
+            convert.find('.input-letters').simulate('change', { target: { value: 'i' } });
+        });
+
+        it('updates the letters `state`', () => {
+            expect(convert.state().letters).toEqual('i');
+        });
+    });
 });
