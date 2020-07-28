@@ -13,4 +13,8 @@ describe('Convert', () => {
     it('renders properly', () => {
         expect(convert).toMatchSnapshot();
     });
+
+    it('initializes a string of letters in `state`', () => {
+        expect(convert.state()).toEqual({ letters: '' });
+    });
 });
