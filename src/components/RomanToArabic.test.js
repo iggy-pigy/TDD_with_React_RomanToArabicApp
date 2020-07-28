@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import RomanToArabic from './RomanToArabic';
+import Convert from './RomanToArabic';
 
 describe('RomanToArabic', () => {
     const convert = shallow(<Convert />);
