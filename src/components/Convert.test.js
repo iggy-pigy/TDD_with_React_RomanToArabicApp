@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Convert from './RomanToArabic';
+import Convert from './Convert';
 
-describe('RomanToArabic', () => {
+describe('Convert', () => {
     const convert = shallow(<Convert />);
 
     it('renders properly', () => {
