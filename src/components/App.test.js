@@ -12,4 +12,8 @@ describe('App', () => {
     it('renders properly', () => {
         expect(app).toMatchSnapshot();
     });
+
+    it('initializes the `state` with an empty list of letters', () => {
+        expect(app.state().letters).toEqual([]);
+    });
 });
