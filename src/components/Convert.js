@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, FormController, FormLabel, Button } from 'react-bootstrap';
+import { Form, FormControl, FormLabel, Button } from 'react-bootstrap';
 
 class Convert extends Component {
     constructor() {
@@ -12,7 +12,7 @@ class Convert extends Component {
             <div>
                 <Form>
                     <FormLabel>Roman Numerals</FormLabel>
-                    <FormController
+                    <FormControl
                         className='input-letters'
                         onChange={event => this.setState({ letters: event.target.value })} />
                 </Form>
