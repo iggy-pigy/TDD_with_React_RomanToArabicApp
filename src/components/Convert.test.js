@@ -19,12 +19,14 @@ describe('Convert', () => {
     });
 
     describe('before typing into the letter input', () => {
+        const inputValue = 'i';
+
         beforeEach(() => {
-            convert.find('.input-letters').simulate('change', { target: { value: 'i' } });
+            convert.find('.input-letters').simulate('change', { target: { value: inputValue } });
         });
 
         it('updates the letters `state`', () => {
-            expect(convert.state().letters).toEqual('i');
+            expect(convert.state().letters).toEqual(inputValue);
         });
     });
 });
