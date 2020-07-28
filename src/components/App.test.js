@@ -16,4 +16,10 @@ describe('App', () => {
     it('initializes the `state` with an empty list of letters', () => {
         expect(app.state().letters).toEqual([]);
     });
+
+    describe('Convert', () => {
+        it('creates a Convert component', () => {
+            expect(app.find('Convert').exists()).toBe(true);
+        });
+    });
 });
